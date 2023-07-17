@@ -1,0 +1,25 @@
+Anagrams.java:
+
+package Algorithms;
+import java.util.*;
+
+public class Anagrams {
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		String a=sc.next();
+		String b=sc.next();
+		
+		a=a.toLowerCase();
+		b=b.toLowerCase();
+		char[] arr1=a.toCharArray();
+		char[] arr2=b.toCharArray();
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		if(Arrays.equals(arr1, arr2))
+			System.out.println("Both are Anagrams");
+		else
+			System.out.println("Both are not anagrams");
+	}
+
+}
